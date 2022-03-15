@@ -625,11 +625,11 @@ img {
 
 @media only screen and (max-width: 320px) {
   .hero__section {
-    height: 495px;
+    max-height: 525px;
     margin-top: 14px;
   }
   .hero__curtain {
-    height: 495px;
+    max-height: 525px;
   }
   .hero__heading {
     padding-top: 70px;
