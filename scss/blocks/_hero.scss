@@ -163,7 +163,12 @@
 @media only screen and (max-width:320px) {
     .hero {
         &__section {
+            height: 495px;
             margin-top: 14px;
+        }
+
+        &__curtain {
+            height: 495px;
         }
 
         &__heading {
@@ -173,20 +178,30 @@
         }
 
         &__text {
+            font-family: 'Raleway';
             font-size: 16px;
             line-height: 145%;
         }
 
         &__button {
+            z-index: 40;
             padding: 22px 73px;
         }
 
         &__bottom {
+            padding: 0;
+            margin-top: 77px;
             &__left {
                 display: none;
             }
             &__right {
                 margin: 0 auto;
+
+                &-st, &-nd, &-rd{
+                    margin-top: 15px;
+                    margin-bottom: 0;
+                }
+                
             }
         }
     }

@@ -27,6 +27,7 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 100%;
+        color: #282B22;
     }
     
     &__socials {
@@ -170,8 +171,10 @@
         &__socials {
             display: none;
         }
+
         &__list {
             display: flex;
+            display: none;
             margin-left: -20px;
         }
         
@@ -179,31 +182,33 @@
             display: none;
         }
 
-        &__close-button {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            z-index: 4;
-        }
+        // &__close-button {
+        //     display: flex;
+        //     margin: 0;
+        //     padding: 0;
+        //     margin-left: 165px;
+        //     z-index: 4;
+        // }
 
-        &__socials {
-            z-index: 10;
-            position: absolute;
-            margin-top: 490px;
-            display: flex;
-        }
+        // &__socials {
+        //     z-index: 10;
+        //     position: absolute;
+        //     margin-top: 490px;
+        //     display: flex;
+        // }
         
-        &__tel {
-            min-width: 190px;
-            margin-top: 660px;
-            z-index: 10;
-            position: absolute;
-            margin-left: 0;
-            display: flex;
-        }
+        // &__tel {
+        //     min-width: 190px;
+        //     margin-top: 660px;
+        //     z-index: 10;
+        //     position: absolute;
+        //     margin-left: 0;
+        //     display: flex;
+        // }
         
         &__hamburger {
             display: none;
+            display: flex;
             z-index: -1;
             margin: 0;
             margin-left: 150px;
