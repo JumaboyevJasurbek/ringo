@@ -1,0 +1,193 @@
+.hero {
+    
+    
+    &__section {
+        margin-top: 20px;
+        text-align: center;
+        background-image: url(./../../img/hero-bg-img.png);
+        background-repeat: no-repeat;
+        max-width: 1600px;
+        height: 687px;
+        
+    }
+    
+    &__curtain {
+        height: 687px;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) -13.19%, rgba(0, 0, 0, 0.85) 94.01%);
+    }
+    
+    &__heading {
+        margin: 0;
+        padding-top: 120px;
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    
+    &__text {
+        margin: 0 auto;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+        opacity: 0.8;
+    }
+    
+    &__button {
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 100%;
+        margin-top: 50px;
+        padding: 22px 49px 22px 56px;
+        border: none;
+        color: #ffffff;
+        background: #AE7B3C;
+        box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
+        
+        &:hover {
+            background-color: #CC9654;
+            box-shadow: 0px 20px 25px rgba(0, 0, 0, 0.05);
+            color: #ffffff;
+            transition: all 0.3s ease;
+        }
+    }
+    
+    &__bottom {
+        margin-left: 170px;
+        margin-right: 170px;
+        margin-top: 160px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-top: 1px solid rgba(255, 255, 255, 0.4);
+        
+        &__left {
+            &-arrow2 {
+                margin-left: 26px;
+            }
+        }
+        
+        
+        &__right {
+            margin-left: 650px;
+            display: flex;
+            color: #ffffff;
+            &-st {
+                padding: 8px 11px;
+                border-radius: 50%;
+                font-size: 16px;
+                line-height: 16px;
+                border: 1px solid #ffffff;
+                opacity: 0.3;
+                &:hover {
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                }
+            }
+            
+            &-nd {
+                margin-left: 15px;
+                padding: 8px 11px;
+                border-radius: 50%;
+                font-size: 16px;
+                line-height: 16px;
+                border: 1px solid #ffffff;
+                opacity: 0.3;
+                
+                &:hover {
+                    opacity: 1;
+                    transition: all 0.5s ease;
+                }
+            }
+            
+            &-rd {
+                margin-left: 15px;
+                padding: 8px 11px;
+                border-radius: 50%;
+                font-size: 16px;
+                line-height: 16px;
+                border: 1px solid #ffffff;
+            }
+            
+        }
+        
+    }
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+    .hero {
+
+        &__section {
+            background-image: url(./../../img/hero-bg-img1000.png);
+            background-repeat: no-repeat;
+            max-width: 1000px;
+        }
+
+        &__bottom {
+            margin-left: 20px;
+            margin-right: 20px;
+            &__right {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .hero {
+
+        // &__huje-curtain {
+        //     background: rgba(0, 0, 0, 0.3);
+        // }
+
+        &__section {
+            background-image: url(./../../img/hero-bg-img640.png);
+        }
+
+    }
+}
+
+
+@media only screen and (max-width:320px) {
+    .hero {
+        &__section {
+            margin-top: 14px;
+        }
+
+        &__heading {
+            padding-top: 70px;
+            font-size: 28px;
+            line-height: 120%;
+        }
+
+        &__text {
+            font-size: 16px;
+            line-height: 145%;
+        }
+
+        &__button {
+            padding: 22px 73px;
+        }
+
+        &__bottom {
+            &__left {
+                display: none;
+            }
+            &__right {
+                margin: 0 auto;
+            }
+        }
+    }
+}
