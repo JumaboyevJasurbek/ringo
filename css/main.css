@@ -600,9 +600,6 @@ img {
 }
 
 @media only screen and (max-width: 640px) {
-  .hero__huje-curtain {
-    background: rgba(0, 0, 0, 0.3);
-  }
   .hero__section {
     background-image: url(./../../img/hero-bg-img640.png);
   }
@@ -709,6 +706,12 @@ img {
   margin-left: 12px;
 }
 
+.header__close-button {
+  display: none;
+  border: none;
+  background-color: transparent;
+}
+
 .header__hamburger {
   display: none;
 }
@@ -793,10 +796,44 @@ img {
   .header__socials {
     display: none;
   }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -20px;
+  }
   .header__tel {
     display: none;
   }
+  .header__close-button {
+    margin: 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    z-index: 4;
+  }
+  .header__socials {
+    z-index: 10;
+    position: absolute;
+    margin-top: 490px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__tel {
+    min-width: 190px;
+    margin-top: 660px;
+    z-index: 10;
+    position: absolute;
+    margin-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .header__hamburger {
+    display: none;
+    z-index: -1;
     margin: 0;
     margin-left: 150px;
   }

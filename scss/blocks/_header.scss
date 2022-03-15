@@ -59,6 +59,12 @@
             margin-left: 12px;
         }
     }
+
+    &__close-button {
+        display: none;
+        border: none;
+        background-color: transparent;
+    }
     
     &__hamburger {
         display: none;
@@ -159,21 +165,46 @@
                 display: inline-block;
             }
         }
+
         
         &__socials {
             display: none;
         }
-        // &__list {
-        //     display: flex;
-        //     display: none;
-        //     margin-left: -20px;
-        // }
+        &__list {
+            display: flex;
+            margin-left: -20px;
+        }
         
         &__tel {
             display: none;
         }
+
+        &__close-button {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            z-index: 4;
+        }
+
+        &__socials {
+            z-index: 10;
+            position: absolute;
+            margin-top: 490px;
+            display: flex;
+        }
+        
+        &__tel {
+            min-width: 190px;
+            margin-top: 660px;
+            z-index: 10;
+            position: absolute;
+            margin-left: 0;
+            display: flex;
+        }
         
         &__hamburger {
+            display: none;
+            z-index: -1;
             margin: 0;
             margin-left: 150px;
         }
